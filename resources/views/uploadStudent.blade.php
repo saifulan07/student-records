@@ -16,19 +16,29 @@
                 <h2>Upload from file</h2>
             </div>
         </div>
+        <hr />
         <div class="row">
             <div class="col-md-12">
-                <input type="file" class="form-control-file">
+                <a href="{{ asset('student_records.xlsx') }}">Download Excel Template</a>
             </div>
         </div>
-        <div class="row mt-3">
-            <div class="col-md-6">
-                <button type="button" class="btn btn-primary btn-block">Upload</button>
+        <hr />
+        <form method="post">
+            @csrf
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="file" name="studentExcel" class="form-control-file">
+                </div>
             </div>
-            <div class="col-md-6">
-                <button type="button" class="btn btn-secondary btn-block">Cancel</button>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary btn-block">Upload</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="reset" class="btn btn-danger btn-block">Cancel</button>
+                </div>
             </div>
-        </div>
+        </form>
         <div class="row mt-4">
             <div class="col-md-12">
                 <table class="table">
