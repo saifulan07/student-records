@@ -1,9 +1,10 @@
 Installation guideline
 
 1. clone project
- 
-=> git clone https://github.com/saifulan07/student-records.git (https)
-=> git clone git@github.com:saifulan07/student-records.git (ssh)
+
+1.1 git clone https://github.com/saifulan07/student-records.git (https)
+
+1.2  git clone git@github.com:saifulan07/student-records.git (ssh)
 
 2. setup database connection at .env file.
 
