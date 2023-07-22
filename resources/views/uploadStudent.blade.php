@@ -42,7 +42,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- List of files will be dynamically generated here -->
+                        @forelse($students as $index => $student)
+                        <tr>
+                            <td>{{ $loop->index + 1 }}</td>
+                            <td>{{ $student->name }}</td>
+                            <td>{{ $student->class }}</td>
+                            <td>{{ $student->level }}</td>
+                            <td>{{ $student->parent_contact }}</td>
+                        </tr>
+                        @empty
+                        <tr>
+                            <td colspan="5"><center>No records</center></td>
+                        </tr>
+                        @endforelse
                     </tbody>
                 </table>
             </div>
