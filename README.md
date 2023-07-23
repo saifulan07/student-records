@@ -10,6 +10,8 @@ Installation guideline
 
 3. run composer install
 
-4. run php artisan migrate
+4. run php artisan key:generate
 
-5. run php artisan db:seed
+5. run php artisan migrate
+
+6. run php artisan db:seed
