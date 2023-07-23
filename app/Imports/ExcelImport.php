@@ -36,7 +36,5 @@ class ExcelImport implements ToModel, WithHeadingRow
             'level' => $row['level'],
             'parent_contact' => $row['parent_contact'],
         ]);
-
-        return $student;
     }
 }
