@@ -30,7 +30,6 @@ class ExcelImport implements ToModel, WithHeadingRow
             throw new \Exception('Invalid data found in the Excel file: ' . implode(', ', $errorMessages));
         }
 
-        //checking if student data is exists
         $student = Student::firstOrCreate([
             'name' => $row['name'],
             'class' => $row['class'],
