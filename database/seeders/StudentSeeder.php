@@ -21,7 +21,7 @@ class StudentSeeder extends Seeder
         ];
 
         foreach($students as $student) {
-            Student::create($student);
+            Student::firstOrCreate($student, $student);
         }
     }
 }
